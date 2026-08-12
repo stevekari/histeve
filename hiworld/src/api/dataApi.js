@@ -1,5 +1,4 @@
-
-const BASE_URL = 'http://localhost:8080/api/messages';
+const BASE_URL = '/api/messages';
 
 const dataApi = {
     getMessages: async () => {
