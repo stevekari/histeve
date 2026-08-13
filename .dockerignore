@@ -1,0 +1,73 @@
+# flyctl launch added from helloSteve/.gitignore
+helloSteve/**/HELP.md
+helloSteve/**/target
+helloSteve/**/.mvn/wrapper/maven-wrapper.jar
+!helloSteve/**/**/src/main/**/target
+!helloSteve/**/**/src/test/**/target
+
+### STS ###
+helloSteve/**/.apt_generated
+helloSteve/**/.classpath
+helloSteve/**/.factorypath
+helloSteve/**/.project
+helloSteve/**/.settings
+helloSteve/**/.springBeans
+helloSteve/**/.sts4-cache
+
+### IntelliJ IDEA ###
+helloSteve/**/.idea
+helloSteve/**/*.iws
+helloSteve/**/*.iml
+helloSteve/**/*.ipr
+
+### NetBeans ###
+helloSteve/nbproject/private
+helloSteve/nbbuild
+helloSteve/dist
+helloSteve/nbdist
+helloSteve/.nb-gradle
+helloSteve/**/build
+!helloSteve/**/**/src/main/**/build
+!helloSteve/**/**/src/test/**/build
+
+### VS Code ###
+helloSteve/**/.vscode
+
+# flyctl launch added from helloSteve/.idea/.gitignore
+# Default ignored files
+helloSteve/.idea/shelf
+helloSteve/.idea/workspace.xml
+# Ignored default folder with query files
+helloSteve/.idea/queries
+# Datasource local storage ignored files
+helloSteve/.idea/dataSources
+helloSteve/.idea/dataSources.local.xml
+# Editor-based HTTP Client requests
+helloSteve/.idea/httpRequests
+
+# flyctl launch added from hiworld/.gitignore
+# Logs
+hiworld/**/logs
+hiworld/**/*.log
+hiworld/**/npm-debug.log*
+hiworld/**/yarn-debug.log*
+hiworld/**/yarn-error.log*
+hiworld/**/pnpm-debug.log*
+hiworld/**/lerna-debug.log*
+
+hiworld/**/node_modules
+hiworld/**/dist
+hiworld/**/dist-ssr
+hiworld/**/*.local
+
+# Editor directories and files
+hiworld/**/.vscode/*
+!hiworld/**/.vscode/extensions.json
+hiworld/**/.idea
+hiworld/**/.DS_Store
+hiworld/**/*.suo
+hiworld/**/*.ntvs*
+hiworld/**/*.njsproj
+hiworld/**/*.sln
+hiworld/**/*.sw?
+fly.toml
