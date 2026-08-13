@@ -2,7 +2,7 @@
 # 1️⃣ Build React Frontend
 # ============================
 FROM node:20-alpine AS frontend-build
-WORKDIR /frontend
+WORKDIR /helloSteve
 COPY frontend/package*.json ./
 RUN npm install
 COPY frontend/ .
@@ -12,7 +12,7 @@ RUN npm run build
 # 2️⃣ Build Spring Boot Backend
 # ============================
 FROM maven:3.9-eclipse-temurin-17 AS backend-build
-WORKDIR /backend
+WORKDIR /hiword
 COPY backend/pom.xml .
 COPY backend/src ./src
 RUN mvn clean package -DskipTests
