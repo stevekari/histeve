@@ -1,0 +1,12 @@
+# render# Render Blueprint - auto deploy
+# services:
+#   - type: web
+#     name: fullstack-app
+#     env: docker
+#     dockerfilePath: ./Dockerfile
+#     dockerContext: .
+#     plan: free
+#     healthCheckPath: /api/health
+#     envVars:
+#       - key: NODE_ENV
+#         value: production

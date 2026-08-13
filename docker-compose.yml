@@ -1,31 +1,15 @@
-# services:
-#   # --- Backend Service ---
-#   backend:
-#     build:
-#       context: ./helloSteve
-#       dockerfile: Dockerfile
-#     container_name: java-backend
-#     environment:
-#       - SPRING_PROFILES_ACTIVE=prod
-#     restart: always
-
-#   # --- Frontend Service ---
-#   frontend:
-#     build:
-#       context: ./hiworld
-#       dockerfile: Dockerfile
-#     container_name: hiworld
-#     ports:
-#       - "80:80"
-#     depends_on:
-#       - backend
-#     restart: always
-
-#     version: "3.8"
-
 services:
-  app:
-    build: .
-    ports:
-      - "8080:8080"
+  - type: web
+    name: backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./helloSteve
+    plan: free
+    healthCheckPath: /actuator/health
 
+  - type: web
+    name: frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    rootDir: ./hiworld
